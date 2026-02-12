@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=updater
+Exec=updater
+Icon=dev.fizzyizzy05.updater
+Terminal=false
+Type=Application
+Categories=Utility;
+Keywords=GTK;
+StartupNotify=true
+DBusActivatable=true

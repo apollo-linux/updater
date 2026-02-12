@@ -1,0 +1,67 @@
+using Gtk 4.0;
+using Adw 1;
+
+template $UpdaterWindow: Adw.ApplicationWindow {
+  title: _("Updater");
+  default-width: 400;
+  default-height: 500;
+
+  content: Adw.ToolbarView {
+    [top]
+    Adw.HeaderBar {
+      [end]
+      MenuButton {
+        primary: true;
+        icon-name: "open-menu-symbolic";
+        tooltip-text: _("Main Menu");
+        menu-model: primary_menu;
+      }
+    }
+
+    content: Box {
+      orientation: vertical;
+      valign: center;
+      hexpand: true;
+      vexpand: true;
+
+      Adw.Clamp {
+        Stack {
+          Adw.StatusPage {
+            icon-name: "up-arrow-in-a-star-symbolic";
+            title: _("Up to date");
+            description: _("No updates available for this device");
+
+            Button {
+              label: _("Check again for updates");
+              halign: center;
+
+              styles [
+                "suggested-action",
+                "pill"
+              ]
+            }
+          }
+        }
+      }
+    };
+  };
+}
+
+menu primary_menu {
+  section {
+    item {
+      label: _("_Preferences");
+      action: "app.preferences";
+    }
+
+    item {
+      label: _("_Keyboard Shortcuts");
+      action: "app.shortcuts";
+    }
+
+    item {
+      label: _("_About Updater");
+      action: "app.about";
+    }
+  }
+}

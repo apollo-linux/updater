@@ -1,0 +1,8 @@
+# List of source files containing translatable strings.
+# Please keep this file sorted alphabetically.
+data/dev.fizzyizzy05.updater.desktop.in
+data/dev.fizzyizzy05.updater.metainfo.xml.in
+data/dev.fizzyizzy05.updater.gschema.xml
+src/main.vala
+src/window.vala
+src/window.blp

@@ -1,0 +1,3 @@
+[D-BUS Service]
+Name=dev.fizzyizzy05.updater
+Exec=@bindir@/updater --gapplication-service
