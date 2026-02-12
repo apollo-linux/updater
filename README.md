@@ -6,6 +6,7 @@ Updater is an app for fetching and installing system updates on bootc systems an
 - Check, fetch and apply bootc and fwupd updates
 - Toggle automatic updates on the system
 - Allow the user to enable/disable "features", and choose between set images (e.g., dev mode, Nvidia drivers) chosen by the image vendor.
+- Choose between image update channels, such as stable, testing, etc.
 - Rolling back images in the case of an issue
 
 ## Out of scope/not currently planned
